@@ -214,7 +214,7 @@
       enable = true;
       enableSSHSupport = true;
     };
-    virt-manager.enable = true;
+    virt-manager.enable = false;
     steam = {
       enable = true;
       gamescopeSession.enable = true;
@@ -411,8 +411,8 @@
   };
 
   # Extra Logitech Support
-  hardware.logitech.wireless.enable = true;
-  hardware.logitech.wireless.enableGraphical = true;
+  hardware.logitech.wireless.enable = false;
+  hardware.logitech.wireless.enableGraphical = false;
 
   # Bluetooth Support
   hardware.bluetooth.enable = true;
@@ -472,10 +472,10 @@
   };
 
   # Virtualization / Containers
-  virtualisation.libvirtd.enable = true;
+  virtualisation.libvirtd.enable = false;
   virtualisation.podman = {
     enable = true;
-    dockerCompat = true;
+    dockerCompat = false;
     defaultNetwork.settings.dns_enabled = true;
   };
 
