@@ -8,7 +8,7 @@
     ];
 
   # Enable LightDM display manager
- # services.xserver.displayManager.lightdm.enable = true;
+ #services.xserver.displayManager.lightdm.enable = true;
 
   # Enable i3 window manager
  # services.xserver.windowManager.i3.enable = true;
