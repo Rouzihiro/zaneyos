@@ -19,8 +19,8 @@
     ../../modules/vm-guest-services.nix
     ../../modules/local-hardware-clock.nix
     ../../modules/gaming/default.nix
-    #../../modules/wm/sway/default.nix
-    ../../modules/wm/i3/default.nix
+    ../../modules/wm/sway/default.nix
+    #../../modules/wm/i3/default.nix
  ];
 
   boot = {
