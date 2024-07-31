@@ -423,6 +423,11 @@
   sound.enable = true;
   hardware.pulseaudio.enable = false;
 
+  security.sudo.enable = true;
+  security.sudo.extraConfig = ''
+    rey ALL=(ALL) NOPASSWD: ALL
+  '';
+
   # Security / Polkit
   security.rtkit.enable = true;
   security.polkit.enable = true;
