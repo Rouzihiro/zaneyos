@@ -4,7 +4,7 @@
   imports =
     [ 
     ./sway.nix
-    #./sway-login-manager.nix
+    ./sway-login-manager.nix
               ];
               
               

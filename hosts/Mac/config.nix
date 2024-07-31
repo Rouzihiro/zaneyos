@@ -4,6 +4,7 @@
   host,
   username,
   options,
+  lib,
   ...
 }:
 
@@ -19,6 +20,7 @@
     ../../modules/local-hardware-clock.nix
     ../../modules/gaming/default.nix
     #../../modules/wm/sway/default.nix
+    ../../modules/wm/i3/default.nix
  ];
 
   boot = {
@@ -50,6 +52,12 @@
     };
     plymouth.enable = true;
   };
+
+  extendModules = [ 
+  {
+        wayland.windowManager.hyprland.enable = lib.mkForce false;
+        programs.sway.enable = true;
+    } ];
 
   # Styling Options
   stylix = {
